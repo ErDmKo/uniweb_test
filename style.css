@@ -1,0 +1,82 @@
+words-list {
+    margin: 50px;
+    display: block;
+    padding: 4px;
+    background: #f7f7f9;
+    box-shadow: inset 0px 0px 2px rgba(0,0,0,.4);ß
+}
+.word_list {
+    padding: 10px;
+    border-radius: 2px;
+    background: #fff;
+    display: flex;
+    align-content: stretch;
+
+    box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+}
+.word_list__coll {
+    display: inline-block;
+    width: 100%;
+    padding: 0px 5px;
+}
+.word_list__coll + .word_list__coll {
+    margin-left: 15px;
+}
+.word_list__row {
+    display: flex;
+    margin: 5px 0px;
+}
+.word_list__icon {
+    display: inline-block;
+    width: 20px;
+    flex-grow: 1;
+    height: 20px;
+    position: relative;
+}
+.word_list__icon:after {
+    content: '';
+    position: absolute;
+    border-top: 5px solid transparent;
+    border-right: 5px solid blue;
+    border-bottom: 5px solid transparent;
+    height: 4px;
+    top: 50%;
+    margin-top: -7px;
+    left: 50%;
+}
+.word_list__text {
+    overflow: hidden;
+    flex-grow: 2;
+    flex-basis: 100%;
+    margin: 0px 10px;
+}
+.word_list__input {
+    flex-grow: 1;
+    width: 100px;
+    border-radius: 3px;
+    border: 0;
+    box-shadow: inset 0px 1px 1px rgba(0,0,0,.3);
+    padding: 3px 5px;
+}
+.answers_list {
+    margin: 15px 0px 5px;
+}
+.word_list__drag_place {
+    display: inline-block;
+    width: 100px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    height: 25px;
+}
+.word_list__drag_place.active {
+    border-color: red;
+}
+.answers_list__item  {
+    background: #fff;
+    display: inline-block;
+    padding: 3px 15px;
+    border-radius: 3px;
+}
+.answers_list__item + .answers_list__item {
+    margin-left: 10px;
+}

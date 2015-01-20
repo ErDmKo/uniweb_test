@@ -1,0 +1,15 @@
+<div class="word_list">
+    <div class="word_list__coll" ng-repeat="coll in colls">
+        <div class="word_list__row" ng-repeat="word in coll" >
+            <span ng-show="options.icon" class="word_list__icon"></span>
+            <span ng-show="options.text" class="word_list__text" ng-bind-html="word.text"></span>
+            <input ng-show="options.input && !answers" class="word_list__input" ng-bind-html="word.text"/>
+            <words-answer-place ng-show="answers" class="word_list__drag_place"></words-answer-place> </div>
+    </div>
+</div>
+<div class="answers_list">
+    <words-list-answer
+      ng-repeat="answer in answers"
+      class="answers_list__item"
+      ng-bind="answer.text"></words-list-answer>
+</div>

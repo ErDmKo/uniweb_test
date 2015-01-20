@@ -1,0 +1,18 @@
+<html ng-app="myapp">
+    <head>
+        <meta charset="UTF-8"/>
+        <script src="angular.min.js"></script>
+        <script src="angular-sanitize.min.js"></script>
+        <script src="script.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+    </head>
+    <body ng-controller="wordsCtrl">
+        <h1> Тестовая дерекива вопросов </h1>
+        <words-list 
+          ng-repeat="wlist in paragraph"
+          items="wlist.word_list"
+          answers="wlist.answers"
+          options="wlist.options">
+        </word-list> 
+    </body>
+</html>
